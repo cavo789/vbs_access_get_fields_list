@@ -1,3 +1,5 @@
+![Banner](images/banner.jpg)
+
 # VBS script for getting the list of fields in a MS Access database
 
 > This script will scan a MS Access database, loop through all tables, get the list of fields and properties and will generate a .csv file
@@ -42,15 +44,15 @@ Note : the generated file is a .csv file, stored in your `%TEMP%` folder, the sc
 
 ## Description of returned info
 
-* Filename : The MS Access filename (absolute)
-* TableName : The name of the table
-* FieldName : The name of the field found in that table
-* FieldType : The data type (integer, string, date, ...)
-* FieldSize : The maximum size defined in the table (f.i. 255 means that this field can contains up to 255 characters)
-* ShortestSize : When the table contains records, the ShortestSize info is "what is the smaller information stored in that field ?" (example : if the field is a firstname, size 255 but the shortest firstname is `Paul`, then `ShortestSize` will be set to 4)
-* LongestSize : When the table contains records, the `LongestSize` info is "what is the biggest information stored in that field ?" (example : if the field is a firstname, size 255 but the longest firstname is `Christophe`, then `LongestSize` will be set to 10)
-* Position : The position of that field in the structure of the table (is the first defined field, the second, ...)
-* Occurences : How many time, that specific `FieldName` is found in the entire database. If you've a lot of tables, perhaps the field called `CustomerID` is used in the `Customers` table and in the `Orders` table too so `Occurences` will be set to 2 in this case.
+- Filename : The MS Access filename (absolute)
+- TableName : The name of the table
+- FieldName : The name of the field found in that table
+- FieldType : The data type (integer, string, date, ...)
+- FieldSize : The maximum size defined in the table (f.i. 255 means that this field can contains up to 255 characters)
+- ShortestSize : When the table contains records, the ShortestSize info is "what is the smaller information stored in that field ?" (example : if the field is a firstname, size 255 but the shortest firstname is `Paul`, then `ShortestSize` will be set to 4)
+- LongestSize : When the table contains records, the `LongestSize` info is "what is the biggest information stored in that field ?" (example : if the field is a firstname, size 255 but the longest firstname is `Christophe`, then `LongestSize` will be set to 10)
+- Position : The position of that field in the structure of the table (is the first defined field, the second, ...)
+- Occurences : How many time, that specific `FieldName` is found in the entire database. If you've a lot of tables, perhaps the field called `CustomerID` is used in the `Customers` table and in the `Orders` table too so `Occurences` will be set to 2 in this case.
 
 ## Contribute
 
