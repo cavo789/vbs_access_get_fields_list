@@ -1,6 +1,6 @@
-![Banner](images/banner.jpg)
-
 # VBS script for getting the list of fields in a MS Access database
+
+![Banner](./banner.svg)
 
 > This script will scan a MS Access database, loop through all tables, get the list of fields and properties and will generate a .csv file
 
